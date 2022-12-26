@@ -48,7 +48,7 @@ export function DocumentTitle() {
               type="text"
               name="title"
               spellCheck="false"
-              placeholder="Name your JSON file"
+              placeholder="命名你的 JSON 文件"
               value={editedTitle}
               onChange={(e) => setEditedTitle(e.target.value)}
             />

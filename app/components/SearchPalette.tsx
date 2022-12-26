@@ -118,7 +118,7 @@ export function SearchPalette({
             {...cb.getInputProps({ onKeyDown: handleInputKeyDown })}
             type="text"
             spellCheck="false"
-            placeholder="Search the JSON…"
+            placeholder="搜索JSON…"
             className="w-full pl-12 pr-4 py-4 rounded-sm text-slate-900 bg-slate-100 text-2xl caret-indigo-700 border-indigo-700 transition dark:text-white dark:bg-slate-900 focus:outline-none focus:ring focus:ring-indigo-700"
           />
         </label>
@@ -192,17 +192,17 @@ export function SearchPalette({
           <ShortcutIcon className="w-4 h-4 text-sm text-slate-900 bg-slate-300 transition duration-75 group-hover:bg-slate-100 dark:bg-slate-500 dark:group-hover:bg-slate-600">
             ⏎
           </ShortcutIcon>
-          <Body className="text-slate-700 dakr:text-slate-500">to select</Body>
+          <Body className="text-slate-700 dakr:text-slate-500">搜索</Body>
         </div>
         <div className="flex items-center gap-1">
           <ArrowKeysUpDownIcon className="transition text-slate-300 dark:text-slate-500" />
           <Body className="text-slate-700 dakr:text-slate-500">
-            to navigate
+            选择
           </Body>
         </div>
         <div className="flex items-center gap-1">
           <EscapeKeyIcon className="transition text-slate-300 dark:text-slate-500" />
-          <Body className="text-slate-700 dakr:text-slate-500">to close</Body>
+          <Body className="text-slate-700 dakr:text-slate-500">清空</Body>
         </div>
       </div>
     </>

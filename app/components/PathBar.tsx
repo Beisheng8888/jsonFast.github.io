@@ -80,7 +80,7 @@ export function PathBarText({ selectedNodes, onConfirm }: { selectedNodes: Colum
           type="text"
           name="title"
           spellCheck="false"
-          placeholder="Name your JSON file"
+          placeholder="命名你的 JSON 文件"
           value={path}
           onChange={(e) => setPath(e.target.value)}
         />

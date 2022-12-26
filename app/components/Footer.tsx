@@ -18,33 +18,32 @@ export function Footer() {
         <li className="flex items-center">
           <ArrowKeysIcon className="transition text-slate-300 dark:text-slate-500" />
           <Body className="pl-2 pr-4 text-slate-800 transition dark:text-white">
-            Navigate
+           选择
           </Body>
         </li>
         <li className="flex items-center">
           <SquareBracketsIcon className="transition text-slate-300 dark:text-slate-500" />
           <Body className="pl-2 pr-4 text-slate-800 transition dark:text-white">
-            History
+            历史
           </Body>
         </li>
         <li className="flex items-center">
           <EscapeKeyIcon className="transition text-slate-300 dark:text-slate-500" />
           <Body className="pl-2 pr-4 text-slate-800 transition dark:text-white whitespace-nowrap">
-            Reset path
+            重置路径
           </Body>
         </li>
         <li className="flex items-center">
           <CopyShortcutIcon className="transition text-slate-300 dark:text-slate-500" />
           <Body className="flex pl-2 pr-4 text-slate-800 transition dark:text-white">
-            Copy&nbsp;
+            复制&nbsp;
             <span className="hidden lg:flex whitespace-nowrap">
-              selected&nbsp;
+              已选择&nbsp;
             </span>
-            node
+            节点
           </Body>
         </li>
       </ol>
-      <WorkflowFooterBanner />
       <ol className="flex gap-2 items-center h-full invisible md:visible">
         {minimal && (
           <li>
@@ -59,21 +58,5 @@ export function Footer() {
         </li>
       </ol>
     </footer>
-  );
-}
-
-function WorkflowFooterBanner() {
-  return (
-    <a
-      href="https://trigger.dev"
-      target="_blank"
-      className="hover:underline flex group hover:cursor-pointer text-slate-900 dark:text-white transition items-center"
-    >
-      Create Zapier-like workflows in code.
-      <span className="pl-0.5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-        Check it out
-      </span>
-      <ArrowRightIcon className="ml-1 h-4 w-4 text-base text-slate-900 dark:text-white transition" />
-    </a>
   );
 }
