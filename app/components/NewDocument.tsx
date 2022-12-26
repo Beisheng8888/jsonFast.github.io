@@ -1,6 +1,6 @@
 import { DragAndDropForm } from "./DragAndDropForm";
 import { Title } from "./Primitives/Title";
-import { SampleUrls } from "./SampleUrls";
+
 import { UrlForm } from "./UrlForm";
 
 export function NewDocument() {
@@ -10,10 +10,10 @@ export function NewDocument() {
         <UrlForm className="mb-2" />
         <DragAndDropForm />
 
-        <div className="mt-4">
+      {/*  <div className="mt-4">
           <Title className="mb-2 text-slate-200">No JSON? Try it out:</Title>
-          <SampleUrls />
-        </div>
+
+        </div>*/}
       </div>
     </div>
   );

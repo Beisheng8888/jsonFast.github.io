@@ -57,7 +57,7 @@ export function DragAndDropForm() {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDropAccepted: onDrop,
     maxFiles: 1,
-    maxSize: 1024 * 1024 * 1,
+    maxSize: 1024 * 1024 * 2,
     multiple: false,
     accept: "application/json",
   });
@@ -66,7 +66,7 @@ export function DragAndDropForm() {
     <Form method="post" action="/actions/createFromFile" ref={formRef}>
       <div
         {...getRootProps()}
-        className="block min-w-[300px] cursor-pointer rounded-md border-2 border-dashed border-slate-600 bg-slate-800 p-4 text-base text-slate-300 focus:border-indigo-500 focus:ring-indigo-500"
+        className="block min-w-[1500px] cursor-pointer rounded-md border-2 border-dashed border-slate-600 bg-slate-800 p-4 text-base text-slate-300 focus:border-indigo-500 focus:ring-indigo-500 "
       >
         <input {...getInputProps()} />
         <div className="flex items-center">
@@ -77,8 +77,8 @@ export function DragAndDropForm() {
           />
           <p className={`${isDragActive ? "text-lime-500" : ""}`}>
             {isDragActive
-              ? "Now drop to open it…"
-              : "Drop a JSON file here, or click to select"}
+              ? "现在放下来打开它……"
+              : "在此处拖放一个 JSON 文件，或单击以选择"}
           </p>
         </div>
 
