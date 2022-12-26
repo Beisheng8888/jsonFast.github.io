@@ -8,9 +8,7 @@ export function HomeHeroSection() {
     >
       <div className="self-center flex align-center md:w-1/2 px-60 pb-100 mt-100 lg:mt-0">
         <div className="max-w-lg">
-
           <NewFile />
-
         </div>
       </div>
     </div>
