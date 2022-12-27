@@ -1,21 +1,17 @@
-
-
-# Brought to you by API Hero
-
-JSON Hero was created and is maintained by the team behind [API Hero](https://apihero.run). API Hero makes it quick and easy to add popular APIs to your project using the frameworks you love, and scale without worry.
+# 部署
 
 ```bash
-git clone https://github.com/apihero-run/jsonhero-web.git
+git clone https://github.com/Beisheng8888/jsonFast.github.io.git
 cd jsonhero-web
 npm install
 ```
 
-Then, create a file at the root of the repo called `.env` and set the `SESSION_SECRET` value:
+创建文件 `.env` 填写内容 `SESSION_SECRET` :
 
 ```
 SESSION_SECRET=abc123
 ```
 
-Then, run `npm run build` or `npm run dev` to build.
+然后使用命令 `npm run build` 或者 `npm run dev` 去构建.
 
-Now, run `npm start` and open your browser to `http://localhost:8787`
+现在执行 `npm start` 访问地址 `http://localhost:8787`
